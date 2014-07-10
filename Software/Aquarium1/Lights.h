@@ -5,7 +5,7 @@
 
 class LightArea {
 public:
-  LightArea(char* areaName, int rPin, int gPin, int bPin);
+  LightArea(char* areaName, char rPin, char gPin, char bPin);
   ~LightArea();
   
   const char* getName() const;
@@ -18,9 +18,9 @@ public:
 private:
   char* _areaName;
   
-  int _r;
-  int _g;
-  int _b;
+  char _r;
+  char _g;
+  char _b;
 };
 
 #endif

@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "Lights.h"
 
-LightArea::LightArea(char* areaName, int rPin, int gPin, int bPin) {
+LightArea::LightArea(char* areaName, char rPin, char gPin, char bPin) {
   // Store the light area name
   _areaName = (char*)malloc(strlen(areaName));
   strcpy(_areaName, areaName);
