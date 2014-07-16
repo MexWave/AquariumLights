@@ -30,7 +30,7 @@ void setup() {
     lcd.printString("ERR: No DHCP    ");
     while(1);
   } else {
-    byte* ip = Ethernet.localIP();
+    IPAddress ip = Ethernet.localIP();
     lcd.printfString("IP Address: %u.%u.%u.%u", ip[0], ip[1], ip[2], ip[3]);
   }
 }
